@@ -8,6 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    var body: some View {
+        TabView {
+            StartScreen()
+                .tabItem {
+                    Image(systemName: "1.circle.fill")
+                    Text("Start Screen")
+                }
+                .tag(0)
+            
+            DrugAndDropScreen()
+                .tabItem {
+                    Image(systemName: "2.circle.fill")
+                    Text("Drug And Drop Screen")
+                }
+                .tag(1)
+        }
+        .tabViewStyle(.page)
+    }
+}
+
+struct StartScreen: View {
     @State private var buttonText = "did you click it yet?"
     
     var body: some View {
@@ -26,6 +47,15 @@ struct ContentView: View {
                 .accessibilityIdentifier("message")
                 .padding()
             Text("version:2")
+        }
+        .padding()
+    }
+}
+
+struct DrugAndDropScreen: View {
+    var body: some View {
+        VStack {
+            Text("Drug & Drop screen")
         }
         .padding()
     }
