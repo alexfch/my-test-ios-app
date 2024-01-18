@@ -14,6 +14,7 @@
 		EA2EB3632B48F67C000FDC61 /* my_test_ios_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2EB3622B48F67C000FDC61 /* my_test_ios_appTests.swift */; };
 		EA2EB36D2B48F67C000FDC61 /* my_test_ios_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2EB36C2B48F67C000FDC61 /* my_test_ios_appUITests.swift */; };
 		EA2EB36F2B48F67C000FDC61 /* my_test_ios_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2EB36E2B48F67C000FDC61 /* my_test_ios_appUITestsLaunchTests.swift */; };
+		EA31F7732B5790100085682D /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = EA31F7722B5790100085682D /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA31F7732B5790100085682D /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = "my-test-ios-app";
+			packageProductDependencies = (
+				EA31F7722B5790100085682D /* Algorithms */,
+			);
 			productName = "my-test-ios-app";
 			productReference = EA2EB34E2B48F67A000FDC61 /* my-test-ios-app.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = EA2EB3452B48F67A000FDC61;
+			packageReferences = (
+				EA31F7712B5790100085682D /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = EA2EB34F2B48F67A000FDC61 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -582,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA31F7712B5790100085682D /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA31F7722B5790100085682D /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA31F7712B5790100085682D /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA2EB3462B48F67A000FDC61 /* Project object */;
 }
